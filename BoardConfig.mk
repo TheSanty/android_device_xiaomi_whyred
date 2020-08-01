@@ -168,5 +168,9 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
+# Vendor init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_whyred
+TARGET_RECOVERY_DEVICE_MODULES := libinit_whyred
+
 # Inherit the proprietary files
 include vendor/xiaomi/whyred/BoardConfigVendor.mk
