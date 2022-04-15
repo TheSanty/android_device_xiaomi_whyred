@@ -1,4 +1,5 @@
-type vendor_power_prop, property_type;
+vendor_public_prop(vendor_power_prop)
+
 
 allow hal_power_default sysfs_touchpanel:dir search;
 allow hal_power_default sysfs_touchpanel:file rw_file_perms;
